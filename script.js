@@ -1,3 +1,9 @@
+// Event listener for form submission
+document.getElementById('journal-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the form from submitting the traditional way
+    addEntry(); // Call the function to add a new journal entry
+});
+
 // Array to store journal entries
 let entries = [];
 
