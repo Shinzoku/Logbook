@@ -61,3 +61,18 @@ function displayEntries() {
         entriesDiv.appendChild(entryDiv);
     });
 }
+
+// Function to delete a journal entry
+function deleteEntry(index) {
+    entries.splice(index, 1); // Remove the entry from the entries array
+    displayEntries(); // Display the updated list of entries
+}
+
+// Function to edit a journal entry
+function editEntry(index) {
+    const entry = entries[index]; // Get the entry to edit
+    document.getElementById('title').value = entry.title; // Set the form title input to the entry's title
+    document.getElementById('content').value = entry.content; // Set the form content textarea to the entry's content
+
+    deleteEntry(index); // Delete the entry from the array (it will be added again when saved)
+}
