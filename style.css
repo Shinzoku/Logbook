@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input and textarea styling */
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Submit button styling */
+form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Submit button hover effect */
+form button:hover {
+    background-color: #4cae4c;
+}
+
+/* Journal entry styling */
+.entry {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Journal entry title styling */
+.entry h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Journal entry content styling */
+.entry p {
+    margin: 5px 0;
+}
+
+/* Delete button styling */
+.entry button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Delete button hover effect */
+.entry button:hover {
+    background-color: #c9302c;
+}
+
+/* Edit button styling */
+.entry .edit-button {
+    background-color: #0275d8;
+}
+
+/* Edit button hover effect */
+.entry .edit-button:hover {
+    background-color: #025aa5;
+}

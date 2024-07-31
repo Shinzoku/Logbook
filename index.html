@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,20 @@
     <title>Logbook</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Mon Journal de bord</h1>
+        <!-- Form for adding a new journal entry -->
+        <form id="journal-form">
+            <!-- Input for the title of the journal entry -->
+            <input type="text" id="title" placeholder="Titre" required>
+            <!-- Textarea for the content of the journal entry -->
+            <textarea id="content" placeholder="Contenu" required></textarea>
+            <!-- Submit button for adding the entry -->
+            <button type="submit">Ajouter</button>
+        </form>
+        <!-- Div where journal entries will be displayed -->
+        <div id="entries"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
